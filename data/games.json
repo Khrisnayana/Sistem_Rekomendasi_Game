@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "The Witcher 3: Wild Hunt",
+    "genres": ["RPG", "Action"],
+    "modes": ["Single-player"],
+    "rating": 9.7,
+    "popularity": 95,
+    "image": "https://via.placeholder.com/200x300?text=Witcher+3"
+  },
+  {
+    "id": 2,
+    "name": "Counter-Strike: Global Offensive",
+    "genres": ["Action", "Shooter"],
+    "modes": ["Multiplayer", "Online"],
+    "rating": 8.5,
+    "popularity": 90,
+    "image": "https://via.placeholder.com/200x300?text=CSGO"
+  },
+  {
+    "id": 3,
+    "name": "The Legend of Zelda: Breath of the Wild",
+    "genres": ["Adventure", "Action"],
+    "modes": ["Single-player"],
+    "rating": 9.8,
+    "popularity": 92,
+    "image": "https://via.placeholder.com/200x300?text=Zelda"
+  },
+  {
+    "id": 4,
+    "name": "Dota 2",
+    "genres": ["Strategy", "Action"],
+    "modes": ["Multiplayer", "Online"],
+    "rating": 8.2,
+    "popularity": 88,
+    "image": "https://via.placeholder.com/200x300?text=Dota+2"
+  },
+  {
+    "id": 5,
+    "name": "Minecraft",
+    "genres": ["Sandbox", "Adventure"],
+    "modes": ["Single-player", "Multiplayer", "Online"],
+    "rating": 9.0,
+    "popularity": 98,
+    "image": "https://via.placeholder.com/200x300?text=Minecraft"
+  },
+  {
+    "id": 6,
+    "name": "FIFA 23",
+    "genres": ["Sports", "Simulation"],
+    "modes": ["Single-player", "Multiplayer", "Online"],
+    "rating": 7.8,
+    "popularity": 85,
+    "image": "https://via.placeholder.com/200x300?text=FIFA+23"
+  },
+  {
+    "id": 7,
+    "name": "Among Us",
+    "genres": ["Party", "Strategy"],
+    "modes": ["Multiplayer", "Online"],
+    "rating": 8.4,
+    "popularity": 80,
+    "image": "https://via.placeholder.com/200x300?text=Among+Us"
+  },
+  {
+    "id": 8,
+    "name": "Cyberpunk 2077",
+    "genres": ["RPG", "Action"],
+    "modes": ["Single-player"],
+    "rating": 7.2,
+    "popularity": 75,
+    "image": "https://via.placeholder.com/200x300?text=Cyberpunk"
+  },
+  {
+    "id": 9,
+    "name": "League of Legends",
+    "genres": ["Strategy", "Action"],
+    "modes": ["Multiplayer", "Online"],
+    "rating": 8.0,
+    "popularity": 93,
+    "image": "https://via.placeholder.com/200x300?text=LoL"
+  },
+  {
+    "id": 10,
+    "name": "Grand Theft Auto V",
+    "genres": ["Action", "Adventure"],
+    "modes": ["Single-player", "Multiplayer", "Online"],
+    "rating": 9.5,
+    "popularity": 97,
+    "image": "https://via.placeholder.com/200x300?text=GTA+V"
+  }
+]

@@ -1,0 +1,22 @@
+# Game Recommendation System TODO
+
+- [x] Create package.json
+- [x] Create server.js (Express backend)
+- [x] Create data/games.json (mock game data)
+- [x] Create public/index.html
+- [x] Create public/register.html
+- [x] Create public/js/UserForm.js
+- [x] Create public/js/GameList.js
+- [x] Create public/js/Search.js
+- [x] Create public/js/Recommendation.js
+- [x] Create public/js/app.js
+- [x] Install dependencies (npm install)
+- [x] Run server and test locally
+- [x] Add user dashboard and hide login/register when logged in
+- [x] Add SQLite database with Steam-like game data
+- [x] Create db.js with comprehensive game schema
+- [x] Update server.js for DB integration
+- [x] Create public/login.html
+- [x] Update UI for attractiveness (Steam-like design with gradients and glassmorphism)
+- [x] Update game data with real images and comprehensive metadata
+- [x] Add login functionality with session management
