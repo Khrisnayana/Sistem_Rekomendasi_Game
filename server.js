@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const session = require('express-session');
 const cors = require('cors');
 const db = require('./db');
@@ -78,7 +79,9 @@ app.use(session({
   saveUninitialized: false,
   cookie: { secure: false } // Set to true in production with HTTPS
 }));
-app.use(express.static('public'));
+// Serve static assets from /public and also from /public/... paths (since data uses `public/FOTO/...`)
+app.use(express.static(path.join(__dirname, 'public')));
+app.use('/public', express.static(path.join(__dirname, 'public')));
 
 // API Endpoints
 app.get('/api/games', (req, res) => {

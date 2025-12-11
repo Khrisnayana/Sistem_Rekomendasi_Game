@@ -6,7 +6,7 @@
     "modes": ["Single-player"],
     "rating": 9.7,
     "popularity": 95,
-    "image": "https://via.placeholder.com/200x300?text=Witcher+3"
+    "image": "public/FOTO/the-witcher-3.jpg"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "modes": ["Multiplayer", "Online"],
     "rating": 8.5,
     "popularity": 90,
-    "image": "https://via.placeholder.com/200x300?text=CSGO"
+    "image": "public/FOTO/cs-go.jpg"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "modes": ["Single-player"],
     "rating": 9.8,
     "popularity": 92,
-    "image": "https://via.placeholder.com/200x300?text=Zelda"
+    "image": "public/FOTO/the-legend-of-zelda.jpg"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "modes": ["Multiplayer", "Online"],
     "rating": 8.2,
     "popularity": 88,
-    "image": "https://via.placeholder.com/200x300?text=Dota+2"
+    "image": "public/FOTO/dota-2.jpg"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "modes": ["Single-player", "Multiplayer", "Online"],
     "rating": 9.0,
     "popularity": 98,
-    "image": "https://via.placeholder.com/200x300?text=Minecraft"
+    "image": "public/FOTO/minecraft.jpg"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "modes": ["Single-player", "Multiplayer", "Online"],
     "rating": 7.8,
     "popularity": 85,
-    "image": "https://via.placeholder.com/200x300?text=FIFA+23"
+    "image": "public/FOTO/fifa-23.jpg"
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "modes": ["Multiplayer", "Online"],
     "rating": 8.4,
     "popularity": 80,
-    "image": "https://via.placeholder.com/200x300?text=Among+Us"
+    "image": "public/FOTO/among-us.jpg"
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "modes": ["Multiplayer", "Online"],
     "rating": 8.0,
     "popularity": 93,
-    "image": "https://via.placeholder.com/200x300?text=LoL"
+    "image": "public/FOTO/lol.jpg"
   },
   {
     "id": 10,
@@ -78,7 +78,7 @@
     "modes": ["Single-player", "Multiplayer", "Online"],
     "rating": 9.5,
     "popularity": 97,
-    "image": "https://via.placeholder.com/200x300?text=GTA+V"
+    "image": "public/FOTO/gta-v.jpg"
   },
 
   {
@@ -88,7 +88,7 @@
     "modes": ["Multiplayer", "Online"],
     "rating": 8.7,
     "popularity": 94,
-    "image": "https://via.placeholder.com/200x300?text=Apex+Legends"
+    "image": "public/FOTO/apex-legends.jpg"
   },
   {
     "id": 12,
@@ -97,7 +97,7 @@
     "modes": ["Multiplayer", "Online"],
     "rating": 8.3,
     "popularity": 89,
-    "image": "https://via.placeholder.com/200x300?text=PUBG"
+    "image": "public/FOTO/pubg.jpg"
   },
   {
     "id": 13,
@@ -106,7 +106,7 @@
     "modes": ["Single-player"],
     "rating": 9.9,
     "popularity": 96,
-    "image": "https://via.placeholder.com/200x300?text=Elden+Ring"
+    "image": "public/FOTO/elden-ring.jpeg"
   },
   {
     "id": 14,
@@ -115,7 +115,7 @@
     "modes": ["Single-player"],
     "rating": 9.8,
     "popularity": 95,
-    "image": "https://via.placeholder.com/200x300?text=RDR2"
+    "image": "public/FOTO/red-dead-redemption-2.jpg"
   },
   {
     "id": 15,
@@ -124,7 +124,7 @@
     "modes": ["Multiplayer", "Online"],
     "rating": 7.9,
     "popularity": 83,
-    "image": "https://via.placeholder.com/200x300?text=Overwatch+2"
+    "image": "public/FOTO/overwatch-2.jpeg"
   },
 
   {
@@ -134,7 +134,7 @@
     "modes": ["Multiplayer", "Online"],
     "rating": 8.6,
     "popularity": 90,
-    "image": "https://via.placeholder.com/200x300?text=Rocket+League"
+    "image": "public/FOTO/overwatch-2.jpeg"
   },
   {
     "id": 17,
@@ -143,7 +143,7 @@
     "modes": ["Single-player", "Multiplayer"],
     "rating": 9.1,
     "popularity": 88,
-    "image": "https://via.placeholder.com/200x300?text=Terraria"
+    "image": "public/FOTO/terraria.jpg"
   },
   {
     "id": 18,
@@ -152,7 +152,7 @@
     "modes": ["Single-player"],
     "rating": 9.6,
     "popularity": 85,
-    "image": "https://via.placeholder.com/200x300?text=Hades"
+    "image": "public/FOTO/hades.png"
   },
   {
     "id": 19,
@@ -161,7 +161,7 @@
     "modes": ["Single-player", "Multiplayer"],
     "rating": 8.8,
     "popularity": 82,
-    "image": "https://via.placeholder.com/200x300?text=Valheim"
+    "image": "public/FOTO/valheim.jpg"
   },
   {
     "id": 20,
@@ -170,7 +170,7 @@
     "modes": ["Single-player", "Multiplayer"],
     "rating": 9.7,
     "popularity": 94,
-    "image": "https://via.placeholder.com/200x300?text=Stardew"
+    "image": "public/FOTO/stadew-valley.png"
   },
 
   {
@@ -180,7 +180,7 @@
     "modes": ["Single-player"],
     "rating": 9.9,
     "popularity": 97,
-    "image": "https://via.placeholder.com/200x300?text=BG3"
+    "image": "public/FOTO/Baldurs-Gate-3.jpg"
   },
   {
     "id": 23,
@@ -189,7 +189,7 @@
     "modes": ["Multiplayer"],
     "rating": 8.0,
     "popularity": 87,
-    "image": "https://via.placeholder.com/200x300?text=Fall+Guys"
+    "image": "public/FOTO/fall-guys.jpg"
   },
   {
     "id": 24,
@@ -198,7 +198,7 @@
     "modes": ["Multiplayer", "Online"],
     "rating": 8.1,
     "popularity": 90,
-    "image": "https://via.placeholder.com/200x300?text=Rust"
+    "image": "public/FOTO/rust.jpg"
   },
   {
     "id": 25,
@@ -207,7 +207,7 @@
     "modes": ["Multiplayer", "Online"],
     "rating": 7.8,
     "popularity": 85,
-    "image": "https://via.placeholder.com/200x300?text=ARK"
+    "image": "public/FOTO/ark.jpg"
   },
 
   {
@@ -217,7 +217,7 @@
     "modes": ["Multiplayer"],
     "rating": 9.0,
     "popularity": 89,
-    "image": "https://via.placeholder.com/200x300?text=Garrys+Mod"
+    "image": "public/FOTO/garry's-mod.jpg"
   },
   {
     "id": 27,
@@ -226,7 +226,7 @@
     "modes": ["Multiplayer"],
     "rating": 8.5,
     "popularity": 86,
-    "image": "https://via.placeholder.com/200x300?text=Phasmophobia"
+    "image": "public/FOTO/phasmophobia.jpg"
   },
   {
     "id": 28,
@@ -235,7 +235,7 @@
     "modes": ["Multiplayer"],
     "rating": 8.1,
     "popularity": 90,
-    "image": "https://via.placeholder.com/200x300?text=DBD"
+    "image": "public/FOTO/Dead-by-Daylight.jpg"
   },
   {
     "id": 29,
@@ -244,7 +244,7 @@
     "modes": ["Single-player", "Multiplayer"],
     "rating": 8.4,
     "popularity": 88,
-    "image": "https://via.placeholder.com/200x300?text=The+Forest"
+    "image": "public/FOTO/the-forest.jpg"
   },
   {
     "id": 30,
@@ -253,7 +253,7 @@
     "modes": ["Single-player"],
     "rating": 9.5,
     "popularity": 93,
-    "image": "https://via.placeholder.com/200x300?text=Hollow+Knight"
+    "image": "public/FOTO/hollow-knight.jpg"
   },
 
   {
@@ -263,7 +263,7 @@
     "modes": ["Single-player"],
     "rating": 9.6,
     "popularity": 90,
-    "image": "https://via.placeholder.com/200x300?text=Sekiro"
+    "image": "public/FOTO/sekiro.jpg"
   },
   {
     "id": 32,
@@ -272,7 +272,7 @@
     "modes": ["Single-player"],
     "rating": 9.4,
     "popularity": 89,
-    "image": "https://via.placeholder.com/200x300?text=Dark+Souls+3"
+    "image": "public/FOTO/dark-souls-3.jpg"
   },
   {
     "id": 33,
@@ -281,7 +281,7 @@
     "modes": ["Single-player"],
     "rating": 9.8,
     "popularity": 96,
-    "image": "https://via.placeholder.com/200x300?text=Skyrim"
+    "image": "public/FOTO/The-Elder-Scrolls-V-Skyrim.jpg"
   },
   {
     "id": 34,
@@ -290,7 +290,7 @@
     "modes": ["Multiplayer", "Online"],
     "rating": 9.0,
     "popularity": 88,
-    "image": "https://via.placeholder.com/200x300?text=L4D2"
+    "image": "public/FOTO/left-4-dead-2.jpeg"
   },
   {
     "id": 35,
@@ -299,7 +299,7 @@
     "modes": ["Single-player", "Co-op"],
     "rating": 9.9,
     "popularity": 94,
-    "image": "https://via.placeholder.com/200x300?text=Portal+2"
+    "image": "public/FOTO/portal-2.jpg"
   },
 
   {
@@ -309,7 +309,7 @@
     "modes": ["Multiplayer", "Online"],
     "rating": 8.7,
     "popularity": 92,
-    "image": "https://via.placeholder.com/200x300?text=TF2"
+    "image": "public/FOTO/team-fortress-2.jpg"
   },
   {
     "id": 37,
@@ -318,7 +318,7 @@
     "modes": ["Multiplayer", "Online"],
     "rating": 8.3,
     "popularity": 85,
-    "image": "https://via.placeholder.com/200x300?text=Payday+2"
+    "image": "public/FOTO/payday-2.jpg"
   },
   {
     "id": 38,
@@ -327,7 +327,7 @@
     "modes": ["Single-player"],
     "rating": 8.0,
     "popularity": 91,
-    "image": "https://via.placeholder.com/200x300?text=Sims+4"
+    "image": "public/FOTO/sims-4.jpg"
   },
   {
     "id": 39,
@@ -336,7 +336,7 @@
     "modes": ["Single-player", "Online"],
     "rating": 9.2,
     "popularity": 93,
-    "image": "https://via.placeholder.com/200x300?text=Forza+5"
+    "image": "public/FOTO/forza-horizon-5.jpg"
   },
   {
     "id": 40,
@@ -345,7 +345,7 @@
     "modes": ["Single-player"],
     "rating": 8.7,
     "popularity": 90,
-    "image": "https://via.placeholder.com/200x300?text=AC+Valhalla"
+    "image": "public/FOTO/assasin's-creed.jpeg"
   },
 
   {
@@ -355,7 +355,7 @@
     "modes": ["Single-player"],
     "rating": 9.1,
     "popularity": 92,
-    "image": "https://via.placeholder.com/200x300?text=Horizon+ZD"
+    "image": "public/FOTO/horizon-zero-dawn.jpg"
   },
   {
     "id": 42,
@@ -364,7 +364,7 @@
     "modes": ["Single-player"],
     "rating": 9.7,
     "popularity": 95,
-    "image": "https://via.placeholder.com/200x300?text=TLOU1"
+    "image": "public/FOTO/The-Last-Of-Us-Part-1.jpg"
   },
   {
     "id": 43,
@@ -373,7 +373,7 @@
     "modes": ["Single-player"],
     "rating": 9.4,
     "popularity": 94,
-    "image": "https://via.placeholder.com/200x300?text=RE4"
+    "image": "public/FOTO/ResidentEvil4-Remake.jpg"
   },
   {
     "id": 44,
@@ -382,7 +382,7 @@
     "modes": ["Single-player", "Multiplayer"],
     "rating": 8.8,
     "popularity": 87,
-    "image": "https://via.placeholder.com/200x300?text=Satisfactory"
+    "image": "public/FOTO/satisfactory.jpeg"
   },
   {
     "id": 45,
@@ -391,7 +391,7 @@
     "modes": ["Single-player", "Multiplayer"],
     "rating": 9.6,
     "popularity": 92,
-    "image": "https://via.placeholder.com/200x300?text=Factorio"
+    "image": "public/FOTO/factorio.jpg"
   },
 
   {
@@ -401,7 +401,7 @@
     "modes": ["Single-player", "Multiplayer"],
     "rating": 8.5,
     "popularity": 89,
-    "image": "https://via.placeholder.com/200x300?text=No+Mans+Sky"
+    "image": "public/FOTO/no-man's-sky.jpg"
   },
   {
     "id": 47,
@@ -410,7 +410,7 @@
     "modes": ["Multiplayer", "Online"],
     "rating": 8.8,
     "popularity": 93,
-    "image": "https://via.placeholder.com/200x300?text=Warframe"
+    "image": "public/FOTO/warframe.jpg"
   },
   {
     "id": 48,
@@ -419,7 +419,7 @@
     "modes": ["Single-player", "Online"],
     "rating": 9.0,
     "popularity": 95,
-    "image": "https://via.placeholder.com/200x300?text=Genshin"
+    "image": "public/FOTO/Genshin-Impact.jpg"
   },
   {
     "id": 49,
@@ -428,7 +428,7 @@
     "modes": ["Multiplayer", "Online"],
     "rating": 8.6,
     "popularity": 90,
-    "image": "https://via.placeholder.com/200x300?text=Destiny+2"
+    "image": "public/FOTO/destiny-2.jpg"
   },
   {
     "id": 50,
@@ -437,7 +437,7 @@
     "modes": ["Single-player", "Multiplayer", "Online"],
     "rating": 8.9,
     "popularity": 94,
-    "image": "https://via.placeholder.com/200x300?text=MW2"
+    "image": "public/FOTO/cod.jpg"
   },
   {
     "id": 51,
@@ -446,7 +446,7 @@
     "modes": ["Multiplayer", "Online"],
     "rating": 8.7,
     "popularity": 95,
-    "image": "https://via.placeholder.com/200x300?text=Valorant"
+    "image": "public/FOTO/valorant.jpg"
   },
   {
     "id": 52,
@@ -455,7 +455,7 @@
     "modes": ["Single-player"],
     "rating": 9.1,
     "popularity": 90,
-    "image": "https://via.placeholder.com/200x300?text=Undertale"
+    "image": "public/FOTO/undertale.png"
   },
   {
     "id": 53,
@@ -464,7 +464,7 @@
     "modes": ["Single-player"],
     "rating": 8.8,
     "popularity": 86,
-    "image": "https://via.placeholder.com/200x300?text=Dead+Cells"
+    "image": "public/FOTO/dead-cells.jpg"
   },
   {
     "id": 54,
@@ -473,7 +473,7 @@
     "modes": ["Single-player", "Multiplayer", "Co-op"],
     "rating": 8.6,
     "popularity": 84,
-    "image": "https://via.placeholder.com/200x300?text=Risk+of+Rain+2"
+    "image": "public/FOTO/risk-of-rain-2.jpg"
   },
   {
     "id": 55,
@@ -482,6 +482,6 @@
     "modes": ["Single-player"],
     "rating": 8.9,
     "popularity": 85,
-    "image": "https://via.placeholder.com/200x300?text=Phantom+Liberty"
+    "image": "public/FOTO/cyberpunk-2077.jpeg"
   }
 ]
