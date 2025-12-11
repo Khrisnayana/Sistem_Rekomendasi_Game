@@ -37,7 +37,7 @@ class Wishlist {
               <i class="fas fa-heart text-6xl text-[#8f98a0] mb-4"></i>
               <h3 class="text-2xl font-bold text-[#c7d5e0] mb-2">Your wishlist is empty</h3>
               <p class="text-[#8f98a0] mb-6">Add games to your wishlist to save them for later!</p>
-              <button class="close-wishlist bg-[#5c7e10] hover:bg-[#6e8f1a] text-white px-6 py-3 rounded font-semibold transition-colors">
+              <button class="browse-games bg-[#5c7e10] hover:bg-[#6e8f1a] text-white px-6 py-3 rounded font-semibold transition-colors">
                 Browse Games
               </button>
             </div>
@@ -111,6 +111,11 @@ class Wishlist {
           this.viewGameDetails(gameId);
         }
       });
+    });
+
+    // Add browse games listener to send users back to store
+    this.modal.querySelectorAll('.browse-games').forEach(btn => {
+      btn.addEventListener('click', () => this.goToStore());
     });
 
     document.body.appendChild(this.modal);
@@ -208,6 +213,15 @@ class Wishlist {
         }
       }, 300);
       document.body.style.overflow = 'auto';
+    }
+  }
+
+  goToStore() {
+    this.close();
+    if (window.app && typeof window.app.showPage === 'function') {
+      window.app.showPage('store');
+    } else {
+      window.location.href = 'index.html';
     }
   }
 }
