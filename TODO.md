@@ -20,3 +20,8 @@
 - [x] Update UI for attractiveness (Steam-like design with gradients and glassmorphism)
 - [x] Update game data with real images and comprehensive metadata
 - [x] Add login functionality with session management
+- [x] Fix port conflict issue (changed to 3000)
+- [x] Update GameList.js styling to match modern design
+- [x] Fix createSampleUsers not being called in server.js
+- [x] Remove duplicate game entry in db.js
+- [x] Add Co-op mode option to registration form

@@ -25,7 +25,13 @@ class LoginForm {
       if (result.success) {
         window.location.href = 'index.html';
       } else {
-        alert('Invalid credentials');
+        const errorEl = document.getElementById('error-message');
+        if (errorEl) {
+          errorEl.textContent = result.message || 'Invalid credentials. Please try again.';
+          errorEl.classList.remove('hidden');
+        } else {
+          alert('Invalid credentials');
+        }
       }
     } catch (error) {
       console.error('Login error:', error);

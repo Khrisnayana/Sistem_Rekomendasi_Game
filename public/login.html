@@ -3,31 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login - Game Recommendation System</title>
+  <title>Login - GameHub</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      background: linear-gradient(180deg, #1b2838 0%, #0e1621 100%);
+      min-height: 100vh;
+    }
+  </style>
 </head>
-<body class="bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 min-h-screen flex items-center justify-center">
-  <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-8 shadow-2xl w-full max-w-md">
-    <h1 class="text-3xl font-bold text-white text-center mb-8">Login</h1>
-    <form id="login-form" class="space-y-6">
-      <div>
-        <label for="username" class="block text-white text-sm font-medium mb-2">Username:</label>
-        <input type="text" id="username" name="username" required
-               class="w-full px-4 py-3 bg-white bg-opacity-20 border border-white border-opacity-30 rounded-lg text-white placeholder-white placeholder-opacity-70 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent">
+<body class="min-h-screen flex items-center justify-center p-4">
+  <div class="w-full max-w-md">
+    <div class="text-center mb-8">
+      <h1 class="text-4xl font-bold text-[#66c0f4] mb-2 flex items-center justify-center">
+        <i class="fas fa-gamepad mr-3"></i>GameHub
+      </h1>
+      <p class="text-[#8f98a0]">Sign in to your account</p>
+    </div>
+    
+    <div class="bg-[#1b2838] rounded-lg p-8 shadow-2xl border border-[#2a475e]">
+      <h2 class="text-2xl font-bold text-[#c7d5e0] mb-6">Sign In</h2>
+      <form id="login-form" class="space-y-5">
+        <div>
+          <label for="username" class="block text-[#c7d5e0] text-sm font-medium mb-2">
+            <i class="fas fa-user mr-2 text-[#66c0f4]"></i>Username
+          </label>
+          <input type="text" id="username" name="username" required
+                 placeholder="Enter your username"
+                 class="w-full px-4 py-3 bg-[#16202d] border border-[#2a475e] rounded-lg text-[#c7d5e0] placeholder-[#8f98a0] focus:outline-none focus:ring-2 focus:ring-[#66c0f4] focus:border-[#66c0f4] transition-all">
+        </div>
+        <div>
+          <label for="password" class="block text-[#c7d5e0] text-sm font-medium mb-2">
+            <i class="fas fa-lock mr-2 text-[#66c0f4]"></i>Password
+          </label>
+          <input type="password" id="password" name="password" required
+                 placeholder="Enter your password"
+                 class="w-full px-4 py-3 bg-[#16202d] border border-[#2a475e] rounded-lg text-[#c7d5e0] placeholder-[#8f98a0] focus:outline-none focus:ring-2 focus:ring-[#66c0f4] focus:border-[#66c0f4] transition-all">
+        </div>
+        <div id="error-message" class="hidden bg-[#b84040] bg-opacity-20 border border-[#b84040] text-[#ff6b6b] px-4 py-3 rounded-lg text-sm"></div>
+        <button type="submit"
+                class="w-full bg-[#5c7e10] hover:bg-[#6e8f1a] text-white py-3 px-4 rounded-lg font-bold transition-colors flex items-center justify-center">
+          <i class="fas fa-sign-in-alt mr-2"></i>
+          Sign In
+        </button>
+      </form>
+      <div class="mt-6 pt-6 border-t border-[#2a475e]">
+        <p class="text-[#8f98a0] text-center text-sm">
+          Don't have an account? 
+          <a href="register.html" class="text-[#66c0f4] hover:text-[#8cd4f4] font-semibold underline">Create one here</a>
+        </p>
       </div>
-      <div>
-        <label for="password" class="block text-white text-sm font-medium mb-2">Password:</label>
-        <input type="password" id="password" name="password" required
-               class="w-full px-4 py-3 bg-white bg-opacity-20 border border-white border-opacity-30 rounded-lg text-white placeholder-white placeholder-opacity-70 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent">
-      </div>
-      <button type="submit"
-              class="w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white py-3 px-4 rounded-lg font-semibold hover:from-pink-600 hover:to-purple-700 transition duration-300 transform hover:scale-105">
-        Login
-      </button>
-    </form>
-    <p class="text-white text-center mt-6">
-      Don't have an account? <a href="register.html" class="text-pink-300 hover:text-pink-100 underline">Register here</a>
-    </p>
+    </div>
+    
+    <div class="mt-6 text-center">
+      <a href="index.html" class="text-[#66c0f4] hover:text-[#8cd4f4] text-sm">
+        <i class="fas fa-arrow-left mr-2"></i>Back to Store
+      </a>
+    </div>
   </div>
   <script src="js/LoginForm.js"></script>
 </body>
