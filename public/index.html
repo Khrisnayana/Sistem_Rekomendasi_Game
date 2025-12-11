@@ -3,62 +3,164 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Recommendation System</title>
+    <title>GameHub - Game Store & Recommendations</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+      body {
+        background: linear-gradient(180deg, #1b2838 0%, #0e1621 100%);
+        min-height: 100vh;
+      }
+      .steam-header {
+        background: linear-gradient(90deg, #171a21 0%, #1b2838 100%);
+        border-bottom: 1px solid #2a475e;
+      }
+    </style>
   </head>
-<body class="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 min-h-screen">
-  <header class="bg-black bg-opacity-50 backdrop-blur-lg text-white p-6 shadow-lg">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-3xl font-bold bg-gradient-to-r from-pink-400 to-purple-600 bg-clip-text text-transparent">GameHub</h1>
-      <nav class="space-x-4">
-        <div id="guest-nav">
-          <a href="login.html" class="text-white hover:text-pink-300 transition duration-300">Login</a>
-          <a href="register.html" class="bg-gradient-to-r from-pink-500 to-purple-600 px-4 py-2 rounded-lg hover:from-pink-600 hover:to-purple-700 transition duration-300">Register</a>
+<body class="min-h-screen">
+  <header class="steam-header shadow-lg sticky top-0 z-40">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center space-x-8">
+          <h1 class="text-2xl font-bold text-[#66c0f4] cursor-pointer hover:text-[#8cd4f4] transition-colors">
+            <i class="fas fa-gamepad mr-2"></i>GameHub
+          </h1>
+          <nav class="hidden md:flex space-x-6">
+            <a href="#" class="nav-link text-[#66c0f4] hover:text-[#8cd4f4] transition-colors font-medium" data-page="store">Store</a>
+            <a href="#" class="nav-link text-[#c7d5e0] hover:text-[#66c0f4] transition-colors font-medium" data-page="library">Library</a>
+            <a href="#" class="nav-link text-[#c7d5e0] hover:text-[#66c0f4] transition-colors font-medium" data-page="community">Community</a>
+          </nav>
         </div>
-        <div id="user-nav" class="hidden flex items-center space-x-4">
-          <span id="user-greeting" class="text-white"></span>
-          <button id="logout-btn" class="bg-red-500 px-4 py-2 rounded-lg hover:bg-red-600 transition duration-300">Logout</button>
-        </div>
-      </nav>
+        <nav class="flex items-center space-x-4">
+          <div id="guest-nav" class="flex items-center space-x-4">
+            <a href="login.html" class="text-[#c7d5e0] hover:text-[#66c0f4] transition-colors">Login</a>
+            <a href="register.html" class="bg-[#5c7e10] hover:bg-[#6e8f1a] text-white px-4 py-2 rounded font-semibold transition-colors">Join GameHub</a>
+          </div>
+          <div id="user-nav" class="hidden flex items-center space-x-4">
+            <a href="#" id="cart-link" class="relative text-[#c7d5e0] hover:text-[#66c0f4] transition-colors">
+              <i class="fas fa-shopping-cart text-xl"></i>
+              <span id="cart-count" class="hidden absolute -top-2 -right-2 bg-[#4c6b22] text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">0</span>
+            </a>
+            <a href="#" id="wishlist-link" class="relative text-[#c7d5e0] hover:text-[#66c0f4] transition-colors">
+              <i class="fas fa-heart text-xl"></i>
+              <span id="wishlist-count" class="hidden absolute -top-2 -right-2 bg-[#b84040] text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">0</span>
+            </a>
+            <span id="user-greeting" class="text-[#c7d5e0] font-medium"></span>
+            <button id="logout-btn" class="bg-[#b84040] hover:bg-[#c94a4a] text-white px-4 py-2 rounded font-semibold transition-colors">Logout</button>
+          </div>
+        </nav>
+      </div>
     </div>
   </header>
-  <main class="container mx-auto p-6">
-    <div id="guest-header" class="text-center mb-8">
-      <h2 class="text-4xl font-bold text-white mb-4">Discover Amazing Games</h2>
-      <p class="text-gray-300 text-lg">Browse our collection of popular and trending games</p>
+  <main class="container mx-auto px-6 py-8">
+    <div id="guest-header" class="text-center mb-10">
+      <h2 class="text-5xl font-bold text-[#c7d5e0] mb-4">Discover Amazing Games</h2>
+      <p class="text-[#8f98a0] text-xl">Browse our collection of popular and trending games</p>
     </div>
-    <div id="user-header" class="text-center mb-8 hidden">
-      <h2 class="text-4xl font-bold text-white mb-4">Your Personalized Recommendations</h2>
-      <p class="text-gray-300 text-lg">Games tailored to your preferences and interests</p>
+    <div id="user-header" class="text-center mb-10 hidden">
+      <h2 class="text-5xl font-bold text-[#c7d5e0] mb-4">Your Personalized Recommendations</h2>
+      <p class="text-[#8f98a0] text-xl">Games tailored to your preferences and interests</p>
     </div>
+    
     <div id="search-container" class="mb-8 flex justify-center">
-      <input type="text" id="search-input" placeholder="Search games..."
-             class="w-full max-w-md px-6 py-3 bg-white bg-opacity-20 border border-white border-opacity-30 rounded-full text-white placeholder-white placeholder-opacity-70 focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-transparent backdrop-blur-sm">
+      <div class="relative w-full max-w-2xl">
+        <i class="fas fa-search absolute left-4 top-1/2 transform -translate-y-1/2 text-[#8f98a0]"></i>
+        <input type="text" id="search-input" placeholder="Search games, genres, developers..."
+               class="w-full pl-12 pr-4 py-4 bg-[#16202d] border border-[#2a475e] rounded-lg text-[#c7d5e0] placeholder-[#8f98a0] focus:outline-none focus:ring-2 focus:ring-[#66c0f4] focus:border-[#66c0f4] transition-all">
+      </div>
     </div>
 
     <!-- User Dashboard -->
-    <div id="user-dashboard" class="hidden mb-8 bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-6 border border-white border-opacity-20">
-      <h3 class="text-2xl font-bold text-white mb-4">Your Gaming Profile</h3>
+    <div id="user-dashboard" class="hidden mb-8 bg-[#16202d] rounded-lg p-6 border border-[#2a475e] shadow-lg">
+      <h3 class="text-2xl font-bold text-[#c7d5e0] mb-6 flex items-center">
+        <i class="fas fa-user-circle mr-3 text-[#66c0f4]"></i>Your Gaming Profile
+      </h3>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="bg-white bg-opacity-10 rounded-lg p-4">
-          <h4 class="text-lg font-semibold text-pink-300 mb-2">Preferred Genres</h4>
-          <p id="user-genres" class="text-white">Loading...</p>
+        <div class="bg-[#1b2838] rounded-lg p-5 border border-[#2a475e]">
+          <h4 class="text-lg font-semibold text-[#66c0f4] mb-3 flex items-center">
+            <i class="fas fa-tags mr-2"></i>Preferred Genres
+          </h4>
+          <div id="user-genres" class="flex flex-wrap gap-2">
+            <span class="text-[#c7d5e0]">Loading...</span>
+          </div>
         </div>
-        <div class="bg-white bg-opacity-10 rounded-lg p-4">
-          <h4 class="text-lg font-semibold text-purple-300 mb-2">Preferred Game Modes</h4>
-          <p id="user-modes" class="text-white">Loading...</p>
+        <div class="bg-[#1b2838] rounded-lg p-5 border border-[#2a475e]">
+          <h4 class="text-lg font-semibold text-[#66c0f4] mb-3 flex items-center">
+            <i class="fas fa-users mr-2"></i>Preferred Game Modes
+          </h4>
+          <div id="user-modes" class="flex flex-wrap gap-2">
+            <span class="text-[#c7d5e0]">Loading...</span>
+          </div>
         </div>
       </div>
-      <div class="mt-4 text-center">
-        <p class="text-gray-300">Your recommendations are personalized based on your preferences above.</p>
+      <div class="mt-6 text-center">
+        <p class="text-[#8f98a0]">Your recommendations are personalized based on your preferences above.</p>
       </div>
     </div>
 
-    <div id="game-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-      <!-- Games will be loaded here -->
+    <!-- Store Page (Default) -->
+    <div id="store-page" class="page-section">
+      <div id="game-list">
+        <!-- Games will be loaded here -->
+      </div>
+    </div>
+
+    <!-- Library Page -->
+    <div id="library-page" class="page-section hidden">
+      <div class="py-8">
+        <div class="flex items-center justify-between mb-6">
+          <h2 class="text-4xl font-bold text-[#c7d5e0] flex items-center">
+            <i class="fas fa-gamepad mr-3 text-[#66c0f4]"></i>
+            My Library
+          </h2>
+          <span id="library-count" class="text-[#8f98a0] text-lg bg-[#16202d] px-4 py-2 rounded border border-[#2a475e]">
+            0 games
+          </span>
+        </div>
+        <div id="library-content">
+          <!-- Library games will be loaded here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Community Page -->
+    <div id="community-page" class="page-section hidden">
+      <div class="text-center py-16">
+        <i class="fas fa-users text-6xl text-[#66c0f4] mb-4"></i>
+        <h2 class="text-4xl font-bold text-[#c7d5e0] mb-4">Community</h2>
+        <p class="text-[#8f98a0] text-xl mb-8">Connect with other gamers</p>
+        <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div class="bg-[#16202d] rounded-lg p-6 border border-[#2a475e] hover:border-[#66c0f4] transition-colors cursor-pointer group">
+            <i class="fas fa-comments text-3xl text-[#66c0f4] mb-4 group-hover:scale-110 transition-transform"></i>
+            <h3 class="text-xl font-bold text-[#c7d5e0] mb-2 group-hover:text-[#66c0f4] transition-colors">Forums</h3>
+            <p class="text-[#8f98a0]">Discuss games with the community</p>
+            <button class="mt-4 bg-[#2a475e] hover:bg-[#3a5a7e] text-[#c7d5e0] px-4 py-2 rounded text-sm font-semibold transition-colors w-full">
+              Coming Soon
+            </button>
+          </div>
+          <div class="bg-[#16202d] rounded-lg p-6 border border-[#2a475e] hover:border-[#66c0f4] transition-colors cursor-pointer group">
+            <i class="fas fa-trophy text-3xl text-[#66c0f4] mb-4 group-hover:scale-110 transition-transform"></i>
+            <h3 class="text-xl font-bold text-[#c7d5e0] mb-2 group-hover:text-[#66c0f4] transition-colors">Achievements</h3>
+            <p class="text-[#8f98a0]">Track your gaming achievements</p>
+            <button class="mt-4 bg-[#2a475e] hover:bg-[#3a5a7e] text-[#c7d5e0] px-4 py-2 rounded text-sm font-semibold transition-colors w-full">
+              Coming Soon
+            </button>
+          </div>
+          <div class="bg-[#16202d] rounded-lg p-6 border border-[#2a475e] hover:border-[#66c0f4] transition-colors cursor-pointer group">
+            <i class="fas fa-user-friends text-3xl text-[#66c0f4] mb-4 group-hover:scale-110 transition-transform"></i>
+            <h3 class="text-xl font-bold text-[#c7d5e0] mb-2 group-hover:text-[#66c0f4] transition-colors">Friends</h3>
+            <p class="text-[#8f98a0]">Add friends and play together</p>
+            <button class="mt-4 bg-[#2a475e] hover:bg-[#3a5a7e] text-[#c7d5e0] px-4 py-2 rounded text-sm font-semibold transition-colors w-full">
+              Coming Soon
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
+  <script src="js/GameDetail.js"></script>
+  <script src="js/Cart.js"></script>
+  <script src="js/Wishlist.js"></script>
   <script src="js/app.js"></script>
   <script src="js/GameList.js"></script>
   <script src="js/Search.js"></script>

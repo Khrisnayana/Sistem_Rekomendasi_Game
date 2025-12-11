@@ -16,9 +16,40 @@ class UserForm {
     const genres = formData.getAll('genres');
     const modes = formData.getAll('modes');
 
-    if (!username || !password || genres.length === 0 || modes.length === 0) {
-      alert('Please fill in all fields.');
+    const errorEl = document.getElementById('error-message');
+    
+    if (!username || !password) {
+      if (errorEl) {
+        errorEl.textContent = 'Please fill in username and password.';
+        errorEl.classList.remove('hidden');
+      } else {
+        alert('Please fill in username and password.');
+      }
       return;
+    }
+
+    if (genres.length === 0) {
+      if (errorEl) {
+        errorEl.textContent = 'Please select at least one preferred genre.';
+        errorEl.classList.remove('hidden');
+      } else {
+        alert('Please select at least one preferred genre.');
+      }
+      return;
+    }
+
+    if (modes.length === 0) {
+      if (errorEl) {
+        errorEl.textContent = 'Please select at least one preferred game mode.';
+        errorEl.classList.remove('hidden');
+      } else {
+        alert('Please select at least one preferred game mode.');
+      }
+      return;
+    }
+
+    if (errorEl) {
+      errorEl.classList.add('hidden');
     }
 
     try {
@@ -33,7 +64,12 @@ class UserForm {
         alert('Registration successful! Please login.');
         window.location.href = 'login.html';
       } else {
-        alert('Registration failed: ' + result.message);
+        if (errorEl) {
+          errorEl.textContent = result.message || 'Registration failed. Please try again.';
+          errorEl.classList.remove('hidden');
+        } else {
+          alert('Registration failed: ' + result.message);
+        }
       }
     } catch (error) {
       console.error('Registration error:', error);

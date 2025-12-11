@@ -64,7 +64,7 @@ function createSampleUsers() {
 }
 
 const app = express();
-const PORT = 3000;
+const DEFAULT_PORT = 3000;
 
 // Middleware
 app.use(cors({
@@ -98,6 +98,9 @@ app.get('/api/games', (req, res) => {
 
 app.post('/api/register', (req, res) => {
   const { username, password, genres, modes } = req.body;
+  if (!username || !password || !Array.isArray(genres) || !Array.isArray(modes) || genres.length === 0 || modes.length === 0) {
+    return res.json({ success: false, message: 'Invalid payload' });
+  }
   const genresStr = genres.join(',');
   const modesStr = modes.join(',');
 
@@ -158,30 +161,106 @@ app.get('/api/session', (req, res) => {
 
 app.post('/api/recommend', (req, res) => {
   const { genres, modes } = req.body;
-  const genresStr = genres.join(',');
-  const modesStr = modes.join(',');
+  const g = Array.isArray(genres) ? genres : [];
+  const m = Array.isArray(modes) ? modes : [];
+  
+  if (g.length === 0 && m.length === 0) {
+    return res.json({});
+  }
 
+  // Get all games that match user preferences
+  const conditions = [];
+  const params = [];
+  
+  if (g.length > 0) {
+    const genreConditions = g.map(() => 'genres LIKE ?').join(' OR ');
+    conditions.push(`(${genreConditions})`);
+    params.push(...g.map(genre => `%${genre}%`));
+  }
+  
+  if (m.length > 0) {
+    const modeConditions = m.map(() => 'modes LIKE ?').join(' OR ');
+    conditions.push(`(${modeConditions})`);
+    params.push(...m.map(mode => `%${mode}%`));
+  }
+  
+  const whereClause = conditions.length > 0 ? conditions.join(' OR ') : '1=0';
+  
   const query = `
     SELECT * FROM games
-    WHERE genres LIKE '%' || ? || '%' OR modes LIKE '%' || ? || '%'
-    ORDER BY (rating * popularity) DESC
-    LIMIT 10
+    WHERE ${whereClause}
+    ORDER BY popularity DESC, rating DESC
   `;
 
-  db.all(query, [genresStr, modesStr], (err, rows) => {
+  db.all(query, params, (err, rows) => {
     if (err) {
       return res.status(500).json({ error: err.message });
     }
+    
     // Convert genres and modes to arrays
-    const recommendations = rows.map(game => ({
+    const allGames = rows.map(game => ({
       ...game,
       genres: game.genres.split(','),
       modes: game.modes.split(',')
     }));
-    res.json(recommendations);
+
+    // Group games by genre category (prioritizing user's preferred genres)
+    const gamesByCategory = {};
+    
+    // For each user's preferred genre, get top games
+    g.forEach(userGenre => {
+      const categoryGames = allGames
+        .filter(game => game.genres.some(genre => genre.trim() === userGenre.trim()))
+        .sort((a, b) => {
+          // Sort by popularity first, then rating
+          if (b.popularity !== a.popularity) {
+            return b.popularity - a.popularity;
+          }
+          return b.rating - a.rating;
+        });
+        // Removed slice limit to show all games
+      
+      if (categoryGames.length > 0) {
+        gamesByCategory[userGenre] = categoryGames;
+      }
+    });
+
+    // If no games found for preferred genres, try modes
+    if (Object.keys(gamesByCategory).length === 0) {
+      m.forEach(userMode => {
+        const categoryGames = allGames
+          .filter(game => game.modes.some(mode => mode.trim() === userMode.trim()))
+          .sort((a, b) => {
+            if (b.popularity !== a.popularity) {
+              return b.popularity - a.popularity;
+            }
+            return b.rating - a.rating;
+          });
+          // Removed slice limit to show all games
+        
+        if (categoryGames.length > 0) {
+          gamesByCategory[userMode] = categoryGames;
+        }
+      });
+    }
+
+    res.json(gamesByCategory);
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
+const preferredPort = process.env.PORT ? parseInt(process.env.PORT, 10) : DEFAULT_PORT;
+function listen(port) {
+  const server = app.listen(port, () => {
+    const actualPort = server.address().port;
+    console.log(`Server running on http://localhost:${actualPort}`);
+    createSampleUsers();
+  });
+  server.on('error', (err) => {
+    if (err && err.code === 'EADDRINUSE') {
+      listen(port + 1);
+    } else {
+      throw err;
+    }
+  });
+}
+listen(preferredPort);

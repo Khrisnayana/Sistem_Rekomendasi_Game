@@ -88,5 +88,373 @@
     "rating": 9.5,
     "popularity": 97,
     "image": "https://via.placeholder.com/200x300?text=GTA+V"
+  },
+
+  {
+    "id": 11,
+    "name": "Apex Legends",
+    "genres": ["Shooter", "Battle Royale"],
+    "modes": ["Multiplayer", "Online"],
+    "rating": 8.7,
+    "popularity": 94,
+    "image": "https://via.placeholder.com/200x300?text=Apex+Legends"
+  },
+  {
+    "id": 12,
+    "name": "PUBG: Battlegrounds",
+    "genres": ["Shooter", "Battle Royale"],
+    "modes": ["Multiplayer", "Online"],
+    "rating": 8.3,
+    "popularity": 89,
+    "image": "https://via.placeholder.com/200x300?text=PUBG"
+  },
+  {
+    "id": 13,
+    "name": "Elden Ring",
+    "genres": ["RPG", "Adventure"],
+    "modes": ["Single-player"],
+    "rating": 9.9,
+    "popularity": 96,
+    "image": "https://via.placeholder.com/200x300?text=Elden+Ring"
+  },
+  {
+    "id": 14,
+    "name": "Red Dead Redemption 2",
+    "genres": ["Adventure", "Action"],
+    "modes": ["Single-player"],
+    "rating": 9.8,
+    "popularity": 95,
+    "image": "https://via.placeholder.com/200x300?text=RDR2"
+  },
+  {
+    "id": 15,
+    "name": "Overwatch 2",
+    "genres": ["Shooter", "Action"],
+    "modes": ["Multiplayer", "Online"],
+    "rating": 7.9,
+    "popularity": 83,
+    "image": "https://via.placeholder.com/200x300?text=Overwatch+2"
+  },
+
+  {
+    "id": 16,
+    "name": "Rocket League",
+    "genres": ["Sports", "Action"],
+    "modes": ["Multiplayer", "Online"],
+    "rating": 8.6,
+    "popularity": 90,
+    "image": "https://via.placeholder.com/200x300?text=Rocket+League"
+  },
+  {
+    "id": 17,
+    "name": "Terraria",
+    "genres": ["Sandbox", "Adventure"],
+    "modes": ["Single-player", "Multiplayer"],
+    "rating": 9.1,
+    "popularity": 88,
+    "image": "https://via.placeholder.com/200x300?text=Terraria"
+  },
+  {
+    "id": 18,
+    "name": "Hades",
+    "genres": ["RPG", "Action"],
+    "modes": ["Single-player"],
+    "rating": 9.6,
+    "popularity": 85,
+    "image": "https://via.placeholder.com/200x300?text=Hades"
+  },
+  {
+    "id": 19,
+    "name": "Valheim",
+    "genres": ["Survival", "Adventure"],
+    "modes": ["Single-player", "Multiplayer"],
+    "rating": 8.8,
+    "popularity": 82,
+    "image": "https://via.placeholder.com/200x300?text=Valheim"
+  },
+  {
+    "id": 20,
+    "name": "Stardew Valley",
+    "genres": ["Simulation", "RPG"],
+    "modes": ["Single-player", "Multiplayer"],
+    "rating": 9.7,
+    "popularity": 94,
+    "image": "https://via.placeholder.com/200x300?text=Stardew"
+  },
+
+  {
+    "id": 21,
+    "name": "Cyberpunk 2077: Phantom Liberty",
+    "genres": ["RPG", "Action"],
+    "modes": ["Single-player"],
+    "rating": 8.9,
+    "popularity": 85,
+    "image": "https://via.placeholder.com/200x300?text=Phantom+Liberty"
+  },
+  {
+    "id": 22,
+    "name": "Baldur's Gate 3",
+    "genres": ["RPG", "Strategy"],
+    "modes": ["Single-player"],
+    "rating": 9.9,
+    "popularity": 97,
+    "image": "https://via.placeholder.com/200x300?text=BG3"
+  },
+  {
+    "id": 23,
+    "name": "Fall Guys",
+    "genres": ["Party", "Action"],
+    "modes": ["Multiplayer"],
+    "rating": 8.0,
+    "popularity": 87,
+    "image": "https://via.placeholder.com/200x300?text=Fall+Guys"
+  },
+  {
+    "id": 24,
+    "name": "Rust",
+    "genres": ["Survival", "Action"],
+    "modes": ["Multiplayer", "Online"],
+    "rating": 8.1,
+    "popularity": 90,
+    "image": "https://via.placeholder.com/200x300?text=Rust"
+  },
+  {
+    "id": 25,
+    "name": "ARK: Survival Evolved",
+    "genres": ["Survival", "Adventure"],
+    "modes": ["Multiplayer", "Online"],
+    "rating": 7.8,
+    "popularity": 85,
+    "image": "https://via.placeholder.com/200x300?text=ARK"
+  },
+
+  {
+    "id": 26,
+    "name": "Garry's Mod",
+    "genres": ["Sandbox", "Simulation"],
+    "modes": ["Multiplayer"],
+    "rating": 9.0,
+    "popularity": 89,
+    "image": "https://via.placeholder.com/200x300?text=Garrys+Mod"
+  },
+  {
+    "id": 27,
+    "name": "Phasmophobia",
+    "genres": ["Horror", "Co-op"],
+    "modes": ["Multiplayer"],
+    "rating": 8.5,
+    "popularity": 86,
+    "image": "https://via.placeholder.com/200x300?text=Phasmophobia"
+  },
+  {
+    "id": 28,
+    "name": "Dead by Daylight",
+    "genres": ["Horror", "Survival"],
+    "modes": ["Multiplayer"],
+    "rating": 8.1,
+    "popularity": 90,
+    "image": "https://via.placeholder.com/200x300?text=DBD"
+  },
+  {
+    "id": 29,
+    "name": "The Forest",
+    "genres": ["Survival", "Horror"],
+    "modes": ["Single-player", "Multiplayer"],
+    "rating": 8.4,
+    "popularity": 88,
+    "image": "https://via.placeholder.com/200x300?text=The+Forest"
+  },
+  {
+    "id": 30,
+    "name": "Hollow Knight",
+    "genres": ["Adventure", "Action"],
+    "modes": ["Single-player"],
+    "rating": 9.5,
+    "popularity": 93,
+    "image": "https://via.placeholder.com/200x300?text=Hollow+Knight"
+  },
+
+  {
+    "id": 31,
+    "name": "Sekiro: Shadows Die Twice",
+    "genres": ["Action", "Adventure"],
+    "modes": ["Single-player"],
+    "rating": 9.6,
+    "popularity": 90,
+    "image": "https://via.placeholder.com/200x300?text=Sekiro"
+  },
+  {
+    "id": 32,
+    "name": "Dark Souls III",
+    "genres": ["RPG", "Action"],
+    "modes": ["Single-player"],
+    "rating": 9.4,
+    "popularity": 89,
+    "image": "https://via.placeholder.com/200x300?text=Dark+Souls+3"
+  },
+  {
+    "id": 33,
+    "name": "The Elder Scrolls V: Skyrim",
+    "genres": ["RPG", "Adventure"],
+    "modes": ["Single-player"],
+    "rating": 9.8,
+    "popularity": 96,
+    "image": "https://via.placeholder.com/200x300?text=Skyrim"
+  },
+  {
+    "id": 34,
+    "name": "Left 4 Dead 2",
+    "genres": ["Action", "Co-op"],
+    "modes": ["Multiplayer", "Online"],
+    "rating": 9.0,
+    "popularity": 88,
+    "image": "https://via.placeholder.com/200x300?text=L4D2"
+  },
+  {
+    "id": 35,
+    "name": "Portal 2",
+    "genres": ["Puzzle", "Adventure"],
+    "modes": ["Single-player", "Co-op"],
+    "rating": 9.9,
+    "popularity": 94,
+    "image": "https://via.placeholder.com/200x300?text=Portal+2"
+  },
+
+  {
+    "id": 36,
+    "name": "Team Fortress 2",
+    "genres": ["Shooter", "Action"],
+    "modes": ["Multiplayer", "Online"],
+    "rating": 8.7,
+    "popularity": 92,
+    "image": "https://via.placeholder.com/200x300?text=TF2"
+  },
+  {
+    "id": 37,
+    "name": "Payday 2",
+    "genres": ["Action", "Co-op"],
+    "modes": ["Multiplayer", "Online"],
+    "rating": 8.3,
+    "popularity": 85,
+    "image": "https://via.placeholder.com/200x300?text=Payday+2"
+  },
+  {
+    "id": 38,
+    "name": "The Sims 4",
+    "genres": ["Simulation"],
+    "modes": ["Single-player"],
+    "rating": 8.0,
+    "popularity": 91,
+    "image": "https://via.placeholder.com/200x300?text=Sims+4"
+  },
+  {
+    "id": 39,
+    "name": "Forza Horizon 5",
+    "genres": ["Racing", "Simulation"],
+    "modes": ["Single-player", "Online"],
+    "rating": 9.2,
+    "popularity": 93,
+    "image": "https://via.placeholder.com/200x300?text=Forza+5"
+  },
+  {
+    "id": 40,
+    "name": "Assassin's Creed Valhalla",
+    "genres": ["Action", "Adventure"],
+    "modes": ["Single-player"],
+    "rating": 8.7,
+    "popularity": 90,
+    "image": "https://via.placeholder.com/200x300?text=AC+Valhalla"
+  },
+
+  {
+    "id": 41,
+    "name": "Horizon Zero Dawn",
+    "genres": ["Action", "Adventure"],
+    "modes": ["Single-player"],
+    "rating": 9.1,
+    "popularity": 92,
+    "image": "https://via.placeholder.com/200x300?text=Horizon+ZD"
+  },
+  {
+    "id": 42,
+    "name": "The Last of Us Part I",
+    "genres": ["Adventure", "Action"],
+    "modes": ["Single-player"],
+    "rating": 9.7,
+    "popularity": 95,
+    "image": "https://via.placeholder.com/200x300?text=TLOU1"
+  },
+  {
+    "id": 43,
+    "name": "Resident Evil 4 Remake",
+    "genres": ["Horror", "Action"],
+    "modes": ["Single-player"],
+    "rating": 9.4,
+    "popularity": 94,
+    "image": "https://via.placeholder.com/200x300?text=RE4"
+  },
+  {
+    "id": 44,
+    "name": "Satisfactory",
+    "genres": ["Simulation", "Strategy"],
+    "modes": ["Single-player", "Multiplayer"],
+    "rating": 8.8,
+    "popularity": 87,
+    "image": "https://via.placeholder.com/200x300?text=Satisfactory"
+  },
+  {
+    "id": 45,
+    "name": "Factorio",
+    "genres": ["Simulation", "Strategy"],
+    "modes": ["Single-player", "Multiplayer"],
+    "rating": 9.6,
+    "popularity": 92,
+    "image": "https://via.placeholder.com/200x300?text=Factorio"
+  },
+
+  {
+    "id": 46,
+    "name": "No Man's Sky",
+    "genres": ["Adventure", "Survival"],
+    "modes": ["Single-player", "Multiplayer"],
+    "rating": 8.5,
+    "popularity": 89,
+    "image": "https://via.placeholder.com/200x300?text=No+Mans+Sky"
+  },
+  {
+    "id": 47,
+    "name": "Warframe",
+    "genres": ["Action", "Shooter"],
+    "modes": ["Multiplayer", "Online"],
+    "rating": 8.8,
+    "popularity": 93,
+    "image": "https://via.placeholder.com/200x300?text=Warframe"
+  },
+  {
+    "id": 48,
+    "name": "Genshin Impact",
+    "genres": ["RPG", "Adventure"],
+    "modes": ["Single-player", "Online"],
+    "rating": 9.0,
+    "popularity": 95,
+    "image": "https://via.placeholder.com/200x300?text=Genshin"
+  },
+  {
+    "id": 49,
+    "name": "Destiny 2",
+    "genres": ["Shooter", "Action"],
+    "modes": ["Multiplayer", "Online"],
+    "rating": 8.6,
+    "popularity": 90,
+    "image": "https://via.placeholder.com/200x300?text=Destiny+2"
+  },
+  {
+    "id": 50,
+    "name": "Call of Duty: Modern Warfare II",
+    "genres": ["Shooter", "Action"],
+    "modes": ["Single-player", "Multiplayer", "Online"],
+    "rating": 8.9,
+    "popularity": 94,
+    "image": "https://via.placeholder.com/200x300?text=MW2"
   }
 ]
