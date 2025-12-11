@@ -39,7 +39,7 @@ class Cart {
               <i class="fas fa-shopping-cart text-6xl text-[#8f98a0] mb-4"></i>
               <h3 class="text-2xl font-bold text-[#c7d5e0] mb-2">Your cart is empty</h3>
               <p class="text-[#8f98a0] mb-6">Add some games to your cart to get started!</p>
-              <button class="close-cart bg-[#5c7e10] hover:bg-[#6e8f1a] text-white px-6 py-3 rounded font-semibold transition-colors">
+              <button class="continue-shopping bg-[#5c7e10] hover:bg-[#6e8f1a] text-white px-6 py-3 rounded font-semibold transition-colors">
                 Continue Shopping
               </button>
             </div>
@@ -78,7 +78,7 @@ class Cart {
                   <i class="fas fa-credit-card mr-2"></i>
                   Proceed to Checkout
                 </button>
-                <button class="close-cart bg-[#2a475e] hover:bg-[#3a5a7e] text-[#c7d5e0] px-6 py-3 rounded font-bold transition-colors">
+                <button class="continue-shopping bg-[#2a475e] hover:bg-[#3a5a7e] text-[#c7d5e0] px-6 py-3 rounded font-bold transition-colors">
                   Continue Shopping
                 </button>
               </div>
@@ -111,6 +111,11 @@ class Cart {
         this.proceedToCheckout();
       });
     }
+
+    // Add continue shopping listeners to send users back to store
+    this.modal.querySelectorAll('.continue-shopping').forEach(btn => {
+      btn.addEventListener('click', () => this.goToStore());
+    });
 
     document.body.appendChild(this.modal);
   }
@@ -378,6 +383,16 @@ class Cart {
         }
       }, 300);
       document.body.style.overflow = 'auto';
+    }
+  }
+
+  goToStore() {
+    // Close modal and navigate to store page
+    this.close();
+    if (window.app && typeof window.app.showPage === 'function') {
+      window.app.showPage('store');
+    } else {
+      window.location.href = 'index.html';
     }
   }
 }

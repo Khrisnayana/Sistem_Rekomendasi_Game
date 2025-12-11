@@ -64,15 +64,6 @@
   },
   {
     "id": 8,
-    "name": "Cyberpunk 2077",
-    "genres": ["RPG", "Action"],
-    "modes": ["Single-player"],
-    "rating": 7.2,
-    "popularity": 75,
-    "image": "https://via.placeholder.com/200x300?text=Cyberpunk"
-  },
-  {
-    "id": 9,
     "name": "League of Legends",
     "genres": ["Strategy", "Action"],
     "modes": ["Multiplayer", "Online"],
@@ -182,15 +173,6 @@
     "image": "https://via.placeholder.com/200x300?text=Stardew"
   },
 
-  {
-    "id": 21,
-    "name": "Cyberpunk 2077: Phantom Liberty",
-    "genres": ["RPG", "Action"],
-    "modes": ["Single-player"],
-    "rating": 8.9,
-    "popularity": 85,
-    "image": "https://via.placeholder.com/200x300?text=Phantom+Liberty"
-  },
   {
     "id": 22,
     "name": "Baldur's Gate 3",
@@ -456,5 +438,50 @@
     "rating": 8.9,
     "popularity": 94,
     "image": "https://via.placeholder.com/200x300?text=MW2"
+  },
+  {
+    "id": 51,
+    "name": "Valorant",
+    "genres": ["Shooter", "Action"],
+    "modes": ["Multiplayer", "Online"],
+    "rating": 8.7,
+    "popularity": 95,
+    "image": "https://via.placeholder.com/200x300?text=Valorant"
+  },
+  {
+    "id": 52,
+    "name": "Undertale",
+    "genres": ["RPG", "Indie"],
+    "modes": ["Single-player"],
+    "rating": 9.1,
+    "popularity": 90,
+    "image": "https://via.placeholder.com/200x300?text=Undertale"
+  },
+  {
+    "id": 53,
+    "name": "Dead Cells",
+    "genres": ["Action", "Rogue-like", "Indie"],
+    "modes": ["Single-player"],
+    "rating": 8.8,
+    "popularity": 86,
+    "image": "https://via.placeholder.com/200x300?text=Dead+Cells"
+  },
+  {
+    "id": 54,
+    "name": "Risk of Rain 2",
+    "genres": ["Action", "Rogue-like", "Co-op"],
+    "modes": ["Single-player", "Multiplayer", "Co-op"],
+    "rating": 8.6,
+    "popularity": 84,
+    "image": "https://via.placeholder.com/200x300?text=Risk+of+Rain+2"
+  },
+  {
+    "id": 55,
+    "name": "Cyberpunk 2077: Phantom Liberty",
+    "genres": ["RPG", "Action", "Adventure"],
+    "modes": ["Single-player"],
+    "rating": 8.9,
+    "popularity": 85,
+    "image": "https://via.placeholder.com/200x300?text=Phantom+Liberty"
   }
 ]
