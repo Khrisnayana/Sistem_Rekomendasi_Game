@@ -8,32 +8,32 @@ const db = require('./db');
 function createSampleUsers() {
   const sampleUsers = [
     {
-      username: 'gamer123',
-      password: 'password123',
+      username: 'iusgans',
+      password: 'iusgans123',
       genres: 'Action,RPG,Adventure',
       modes: 'Single-player,Multiplayer'
     },
     {
-      username: 'steamfan',
-      password: 'steam123',
+      username: 'thomas',
+      password: 'thomas123',
       genres: 'Strategy,Simulation,Indie',
       modes: 'Single-player,Co-op'
     },
     {
-      username: 'casualplayer',
-      password: 'casual123',
+      username: 'claude',
+      password: 'claude123',
       genres: 'Party,Casual,Sports',
       modes: 'Multiplayer,Online'
     },
     {
-      username: 'rpglover',
-      password: 'rpg123',
+      username: 'lizzy',
+      password: 'lizzy123',
       genres: 'RPG,Fantasy,Adventure',
       modes: 'Single-player'
     },
     {
-      username: 'competitor',
-      password: 'compete123',
+      username: 'krisna',
+      password: 'krisna05',
       genres: 'Action,Strategy,Shooter',
       modes: 'Multiplayer,Competitive'
     }

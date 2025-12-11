@@ -263,6 +263,18 @@ class App {
     if (page === 'library') {
       this.loadLibrary();
     }
+
+    // If switching to community page, initialize community
+    if (page === 'community') {
+      if (typeof Community !== 'undefined' && !window.community) {
+        window.community = new Community();
+      } else if (window.community) {
+        // Refresh community data
+        window.community.loadForums();
+        window.community.loadAchievements();
+        window.community.loadStats();
+      }
+    }
   }
 
   loadLibrary() {
